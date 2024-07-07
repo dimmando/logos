@@ -1,0 +1,249 @@
+/*Google Fonts class*/
+.carme-regular {
+    font-family: "Carme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    color: #445361;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    font-size: xxx-large;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    
+}
+.header-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent element */
+    display: inline-block; /* Ensure it behaves like a block-level element for layout */
+}
+
+.hidden {
+    display: none;
+}
+
+.flags, .locations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Adjust as needed */
+    max-width: 344px; /* Ensure the content fits within the device width */
+    margin: 0 auto 50px auto; /* Center horizontally and add space between sections */
+}
+
+.flag-image, .location-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px; /* Adjust height to fit within the viewport */
+    width: 96%;
+    max-width: 600px; /* Ensure the image fits within the device width */
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.flag-buttons, .locations-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust gap as needed */
+    margin-top: 20px; /* Space between image and buttons */
+    align-items: center; /* Center the buttons */
+}
+
+.flag-buttons button, .locations-buttons button {
+    border: 3px solid gainsboro; /* 3px wide solid border */
+    border-radius: 10px; /* 10px border radius for curved corners */
+    height: 40px;
+    width: 200px; /* Set width to a consistent value */
+    font-size: larger;
+    cursor: pointer;
+}
+
+.flag-easy, .locations-easy {
+    background-color: green;
+    color: white;
+}
+
+.flag-medium, .locations-medium {
+    background-color: orange;
+    color: white;
+}
+
+.flag-hard, .locations-hard {
+    background-color: red;
+    color: white;
+}
+
+.guessflag, .guesslocation {
+    font-size: x-large;
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.score-area {
+    margin-bottom: 20px;
+    text-align: center; /* Center the scores horizontally */
+}
+
+.scores {
+    margin: 5px;
+    font-size: large;
+}
+
+#quiz-container {
+    text-align: center;  
+}
+
+h1 {
+    margin-top: -10px;
+}
+
+#options {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flag-image {
+    /* Adjust styling for flag images */
+    background: url(../images/scotland-flag.jpg)no-repeat center center/cover;
+}
+
+.location-image {
+    /* Adjust styling for location images */
+    background: url(../images/eiffel-tower.jpg) no-repeat center center/cover;
+}
+
+/* Optional: Style for the container */
+#question img{
+  height: 250px;
+  width: 90%;
+}
+
+.btn {
+    background: #fff;
+    color:#222;
+    font-weight: 500;
+    width: 90%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #222;
+    color: #fff;
+}
+
+#next-btn {
+background: #001e4d;
+color: #fff;
+font-weight: 500;
+width: 40px;
+border: 0;
+padding: 10px;
+margin: 20px auto 0;
+border-radius: 4px;
+cursor: pointer;
+display: none;
+}
+/* styles.css */
+
+.correct {
+    background-color: green;
+    color: white;
+}
+
+.wrong {
+    background-color: red;
+    color: white;
+}
+
+.btn {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#stop-quiz {
+
+    text-decoration: none;
+    color: red;
+    font-weight: 500;
+    font-size: x-large;
+    margin-bottom: 40px;
+    display: inline-block;
+    border: 2px solid lightslategray;
+    background-color: white;
+    border-radius: 600px;
+    width: 180px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    
+}
+.stop-quiz-cont {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+   
+}
+.hidden-text {
+    visibility: hidden;
+}
+
+.container {
+    width:98%;
+}
+
+/*Media query: tablets and larger (768px and up)*/
+@media screen and (min-width:768px) {
+    #question img {
+        height: 350px; /* Set a fixed height for all images */
+        width: 500px; /* Set a width relative to the parent container */
+        max-width: 500px;
+    }
+
+    .flag-image, .location-image {
+        height: 350px; /* Set a fixed height for all images */
+        width: 500px; /* Set a width relative to the parent container */
+        max-width: 500px;
+    }
+}
+
+/*Larger devices (laptops and desktops 992px and up )*/
+@media screen and (min-width:992px) {
+    
+    #quiz-container {
+        margin-top: -15px;
+    }
+
+    .container {
+        display: flex;
+    }
+}
