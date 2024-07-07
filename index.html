@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+     <!--Meta tags-->
+     <meta name="description" content="Car Logos Quiz - Check you knowledges about cars">
+     <meta name="keywords"
+         content="car, car logo, cars, cars logos, Germany cars, China cars, American cars, Italy cars, India cars, Grand Britain cars, model, car model, car models, domestic model car, new car, old car,">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Car Logos Quiz</title>
+</head>
+
+<body>
+    <a href="index.html" class="header-link">
+    <h1 class="header">GeoQuiz</h1>
+</a>
+    <div class="container">
+    <div id="initial-content" class="flags">
+        <h3 class="guessflag">Play Guess The Flag!</h3>
+        <div class="flag-image"></div>
+        <div class="flag-buttons">
+            <button class="flag-easy">Easy</button>
+            <button class="flag-hard">Hard</button>
+        </div>
+    </div>
+    <div class="locations">
+        <h3 class="guesslocation">Play Guess The City!</h3>
+        <div class="location-image"></div>
+        <div class="locations-buttons">
+            <button class="locations-easy">Easy</button>
+            <button class="locations-hard">Hard</button>
+        </div>
+    </div>
+</div>
+
+    <div id="quiz-container" class="hidden">
+       
+        <div class="stop-quiz-cont">
+            <div class="score-area">
+                <p class="scores">Correct Answers <span id="score">0</span></p>
+                <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+            </div>
+        </div>
+        <div id="question"></div>
+        <div id="answer-buttons"></div>
+        <a href="index.html" id="stop-quiz" class="hidden">Stop Quiz</a>
+    </div>
+    
+    <button id="next-btn" class="hidden">Next Question</button>
+    
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
