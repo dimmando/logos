@@ -1,6 +1,6 @@
-const flagEasyQuestions = [
+const logoEasyQuestions = [
     {
-        imagePath: 'assets/images/flag1.jpg',
+        imagePath: 'assets/images/logo1.jpg',
         answers: [
             { text: "New Zealand", correct: false },
             { text: "Australia", correct: true },
@@ -9,7 +9,7 @@ const flagEasyQuestions = [
         ]
     },
     {
-        imagePath: 'assets/images/flag2.jpg',
+        imagePath: 'assets/images/logo2.jpg',
         answers: [
             { text: "Greece", correct: false },
             { text: "The Netherlands", correct: false },
@@ -18,7 +18,7 @@ const flagEasyQuestions = [
         ]
     },
     {
-        imagePath: 'assets/images/flag3.jpg',
+        imagePath: 'assets/images/logo3.jpg',
         answers: [
             { text: "Brazil", correct: false },
             { text: "Greenland", correct: false },
@@ -27,7 +27,7 @@ const flagEasyQuestions = [
         ]
     },
     {
-        imagePath: 'assets/images/flag4.jpg',
+        imagePath: 'assets/images/logo4.jpg',
         answers: [
             { text: "USA", correct: true },
             { text: "China", correct: false },
@@ -36,7 +36,7 @@ const flagEasyQuestions = [
         ]
     },
     {
-        imagePath: 'assets/images/flag5.jpg',
+        imagePath: 'assets/images/logo5.jpg',
         answers: [
             { text: "Sweden", correct: false },
             { text: "Switzerland", correct: false },
@@ -47,8 +47,8 @@ const flagEasyQuestions = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-    const flagEasyButton = document.querySelector(".flag-easy");
-    const flagHardButton = document.querySelector(".flag-hard");
+    const logoEasyButton = document.querySelector(".logo-easy");
+    const logoHardButton = document.querySelector(".logo-hard");
     const locationsEasyButton = document.querySelector(".locations-easy");
     const locationsHardButton = document.querySelector(".locations-hard");
     const initialContent = document.getElementById("initial-content");
@@ -71,12 +71,12 @@ document.addEventListener("DOMContentLoaded", () => {
     quizContainer.classList.add("hidden");
     stopQuizButton.classList.add("hidden");
 
-    flagEasyButton.addEventListener("click", () => {
-        startQuiz(flagEasyQuestions);
+    logoEasyButton.addEventListener("click", () => {
+        startQuiz(logoEasyQuestions);
     });
 
-    flagHardButton.addEventListener("click", () => {
-        startQuiz(flagHardQuestions);
+    logoHardButton.addEventListener("click", () => {
+        startQuiz(logoHardQuestions);
     });
 
     locationsEasyButton.addEventListener("click", () => {
