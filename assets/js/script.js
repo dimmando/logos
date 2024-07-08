@@ -1,58 +1,54 @@
 const logoEasyQuestions = [
     {
-        imagePath: 'assets/images/logo1.jpg',
+        imagePath: 'assets/images/logo1.png',
         answers: [
-            { text: "New Zealand", correct: false },
-            { text: "Australia", correct: true },
-            { text: "USA", correct: false },
-            { text: "United Kingdom", correct: false }
+            { text: "Venturi", correct: false },
+            { text: "Changan", correct: true },
+            { text: "Chery", correct: false },
+            { text: "Vauxhall", correct: false }
         ]
     },
     {
-        imagePath: 'assets/images/logo2.jpg',
+        imagePath: 'assets/images/logo2.png',
         answers: [
-            { text: "Greece", correct: false },
-            { text: "The Netherlands", correct: false },
-            { text: "Sweden", correct: false },
-            { text: "Germany", correct: true }
+            { text: "Aston Martin", correct: false },
+            { text: "Alpine", correct: false },
+            { text: "Acura", correct: false },
+            { text: "Aixam", correct: true }
         ]
     },
     {
-        imagePath: 'assets/images/logo3.jpg',
+        imagePath: 'assets/images/logo3.png',
         answers: [
-            { text: "Brazil", correct: false },
-            { text: "Greenland", correct: false },
-            { text: "Canada", correct: true },
-            { text: "USA", correct: false }
+            { text: "Toyota", correct: false },
+            { text: "Tata", correct: false },
+            { text: "Troller", correct: true },
+            { text: "Tatra", correct: false }
         ]
     },
     {
-        imagePath: 'assets/images/logo4.jpg',
+        imagePath: 'assets/images/logo4.png',
         answers: [
-            { text: "USA", correct: true },
-            { text: "China", correct: false },
-            { text: "United Kingdom", correct: false },
-            { text: "France", correct: false }
+            { text: "Proton", correct: true },
+            { text: "Peugeot", correct: false },
+            { text: "Pagani", correct: false },
+            { text: "Packard", correct: false }
         ]
     },
     {
-        imagePath: 'assets/images/logo5.jpg',
+        imagePath: 'assets/images/logo5.png',
         answers: [
-            { text: "Sweden", correct: false },
-            { text: "Switzerland", correct: false },
-            { text: "United Kingdom", correct: true },
-            { text: "France", correct: false }
+            { text: "Buick", correct: false },
+            { text: "Saipa", correct: false },
+            { text: "Zaz", correct: true },
+            { text: "Laraki", correct: false }
         ]
     }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
     const logoEasyButton = document.querySelector(".logo-easy");
-    const logoHardButton = document.querySelector(".logo-hard");
-    const locationsEasyButton = document.querySelector(".locations-easy");
-    const locationsHardButton = document.querySelector(".locations-hard");
     const initialContent = document.getElementById("initial-content");
-    const locationsContent = document.querySelector(".locations");
     const quizContainer = document.getElementById("quiz-container");
     const scoreArea = document.querySelector(".score-area");
     const questionElement = document.getElementById("question");
@@ -74,23 +70,10 @@ document.addEventListener("DOMContentLoaded", () => {
     logoEasyButton.addEventListener("click", () => {
         startQuiz(logoEasyQuestions);
     });
-
-    logoHardButton.addEventListener("click", () => {
-        startQuiz(logoHardQuestions);
-    });
-
-    locationsEasyButton.addEventListener("click", () => {
-        startQuiz(locationEasyQuestions);
-    });
-
-    locationsHardButton.addEventListener("click", () => {
-        startQuiz(locationHardQuestions);
-    });
-
+   
     function startQuiz(questionsArray) {
         // Hide the initial content and display the quiz container
         initialContent.classList.add("hidden");
-        locationsContent.classList.add("hidden");
         quizContainer.classList.remove("hidden");
         scoreArea.style.display = "block";
     
