@@ -218,15 +218,15 @@ display: none;
 /*Media query: tablets and larger (768px and up)*/
 @media screen and (min-width:768px) {
     #question img {
-        height: 350px; /* Set a fixed height for all images */
-        width: 500px; /* Set a width relative to the parent container */
+        height: 250px;  /* Set a fixed height for all images */
+        width: 90%; /* Set a width relative to the parent container */
         max-width: 500px;
     }
 
     .rr-image, .location-image {
-        height: 350px; /* Set a fixed height for all images */
-        width: 500px; /* Set a width relative to the parent container */
-        max-width: 500px;
+         height: 350px; /* Set a fixed height for all images */
+         width: 500px;  /* Set a width relative to the parent container */
+         max-width: 500px; 
     }
 }
 
