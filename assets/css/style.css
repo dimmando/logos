@@ -24,10 +24,10 @@ body {
     font-size: xx-large;
     margin-top: 10px;
     margin-bottom: 5px;
+    color: #1e3050;
 }
 .header-link {
     text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit the color from the parent element */
     display: inline-block; /* Ensure it behaves like a block-level element for layout */
 }
 
@@ -57,7 +57,13 @@ body {
 }
 
 .rules {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 100%; /* Adjust as needed */
+    max-width: 330px; /* Ensure the content fits within the device width */
+    text-align: justify;
     width: 460px;
 }
 
