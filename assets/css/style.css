@@ -61,8 +61,8 @@ body {
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    width: 100%; /* Adjust as needed */
-    max-width: 330px; /* Ensure the content fits within the device width */
+    width: 90%; /* Adjust as needed */
+    max-width: 300px; /* Ensure the content fits within the device width */
     text-align: justify;
     width: 460px;
 }
