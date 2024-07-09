@@ -31,6 +31,17 @@ body {
     display: inline-block; /* Ensure it behaves like a block-level element for layout */
 }
 
+.copy {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: slategray;
+}
+
+footer > a:hover {
+    color: red;
+}
+
 .hidden {
     display: none;
 }
@@ -60,7 +71,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: left;
-    justify-content: center;
     width: 90%; /* Adjust as needed */
     max-width: 300px; /* Ensure the content fits within the device width */
     text-align: justify;
@@ -222,6 +232,15 @@ display: none;
          height: 350px; /* Set a fixed height for all images */
          width: 500px;  /* Set a width relative to the parent container */
          max-width: 500px; 
+    }
+    .rules {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 90%; /* Adjust as needed */
+        max-width: 500px; /* Ensure the content fits within the device width */
+        text-align: justify;
+        width: 460px;
     }
 }
 
