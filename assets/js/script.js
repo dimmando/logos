@@ -57,13 +57,14 @@ const logoEasyQuestions = [
     const incorrectScore = document.getElementById("incorrect");
     const stopQuizButton = document.getElementById("stop-quiz");
     const totalLeft = document.getElementById("total");
+    console.log("TotalLeft Line 60", totalLeft);
 
     let currentQuestionIndex = 0;
     let currentQuestions = [];
     let score = 0;
     let incorrectAnswers = 0;
     let questionsLeft = logoEasyQuestions.length;
-
+    console.log("questionsLeft Line 67", questionsLeft);
 document.addEventListener("DOMContentLoaded", () => {
     
     // Initially hide the quiz container and the "Stop Quiz" button
@@ -88,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
         nextButton.style.display = "none";
         showQuestion();
         updateScores();
-        totalQuestionsLeft();
+        totalLeft.innerHTML = questionsLeft;
     }
 
 
@@ -153,6 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentQuestionIndex++;
         if (currentQuestionIndex < currentQuestions.length) {
             showQuestion();
+            totalQuestionsLeft();
         } else {
             alert(`Quiz finished! Your score is ${score}/${currentQuestions.length}.`);
             startQuiz(currentQuestions);
@@ -178,7 +180,9 @@ document.addEventListener("DOMContentLoaded", () => {
         incorrectScore.textContent = incorrectAnswers;
     }
     function totalQuestionsLeft() {
-        totalLeft = logoEasyQuestions.length - currentQuestionIndex;
+        questionsLeft = logoEasyQuestions.length - currentQuestionIndex;
+        totalLeft.innerHTML = questionsLeft;
+        console.log("questionsLeft Number is", questionsLeft);
         console.log(totalLeft);
     }    
 });
