@@ -46,7 +46,7 @@ const logoEasyQuestions = [
     }
 ];
 
-const logoEasyButton = document.querySelector(".logo-easy");
+    const logoEasyButton = document.querySelector(".logo-easy");
     const initialContent = document.getElementById("initial-content");
     const quizContainer = document.getElementById("quiz-container");
     const scoreArea = document.querySelector(".score-area");
@@ -56,11 +56,13 @@ const logoEasyButton = document.querySelector(".logo-easy");
     const correctScore = document.getElementById("score");
     const incorrectScore = document.getElementById("incorrect");
     const stopQuizButton = document.getElementById("stop-quiz");
+    const totalLeft = document.getElementById("total");
 
     let currentQuestionIndex = 0;
     let currentQuestions = [];
     let score = 0;
     let incorrectAnswers = 0;
+    let questionsLeft = logoEasyQuestions.length;
 
 document.addEventListener("DOMContentLoaded", () => {
     
@@ -86,6 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
         nextButton.style.display = "none";
         showQuestion();
         updateScores();
+        totalQuestionsLeft();
     }
 
 
@@ -142,8 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 resetQuiz();
             }
         }, 2000); 
-        
-      
+          
         updateScores();
     }
     
@@ -175,4 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
         correctScore.textContent = score;
         incorrectScore.textContent = incorrectAnswers;
     }
+    function totalQuestionsLeft() {
+        totalLeft = currentQuestions.length - currentQuestionIndex;
+    }    
 });
