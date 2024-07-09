@@ -23,7 +23,7 @@ body {
     text-align: center;
     font-size: xx-large;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .header-link {
     text-decoration: none; /* Remove underline */
@@ -35,7 +35,7 @@ body {
     display: none;
 }
 
-.logos, .locations {
+.logos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,7 +45,7 @@ body {
     margin: 0 auto 50px auto; /* Center horizontally and add space between sections */
 }
 
-.rr-image, .location-image {
+.rr-image {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -56,7 +56,12 @@ body {
     margin-right: 2px;
 }
 
-.logo-buttons, .locations-buttons {
+.rules {
+    text-align: left;
+    width: 460px;
+}
+
+.logo-buttons {
     display: flex;
     flex-direction: column;
     gap: 20px; /* Adjust gap as needed */
@@ -64,7 +69,7 @@ body {
     align-items: center; /* Center the buttons */
 }
 
-.logo-buttons button, .locations-buttons button {
+.logo-buttons button {
     border: 3px solid gainsboro; /* 3px wide solid border */
     border-radius: 10px; /* 10px border radius for curved corners */
     height: 40px;
@@ -73,27 +78,18 @@ body {
     cursor: pointer;
 }
 
-.logo-easy, .locations-easy {
+.logo-easy {
     background-color: green;
     color: white;
 }
 
-.logo-medium, .locations-medium {
-    background-color: orange;
-    color: white;
-}
-
-.logo-hard, .locations-hard {
-    background-color: red;
-    color: white;
-}
-
-.guesslogo, .guesslocation {
-    font-size: x-large;
-    margin-bottom: 20px; /* Space below the header */
+.guesslogo {
+    font-size: large;
+    margin-bottom: -15px; /* Space below the header */
 }
 
 .score-area {
+    margin-top: 20px;
     margin-bottom: 20px;
     text-align: center; /* Center the scores horizontally */
 }
@@ -109,13 +105,6 @@ body {
 
 h1 {
     margin-top: -10px;
-}
-
-#options {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .rr-image {
@@ -223,7 +212,7 @@ display: none;
         max-width: 500px;
     }
 
-    .rr-image, .location-image {
+    .rr-image {
          height: 350px; /* Set a fixed height for all images */
          width: 500px;  /* Set a width relative to the parent container */
          max-width: 500px; 
