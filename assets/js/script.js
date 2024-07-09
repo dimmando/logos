@@ -46,8 +46,7 @@ const logoEasyQuestions = [
     }
 ];
 
-document.addEventListener("DOMContentLoaded", () => {
-    const logoEasyButton = document.querySelector(".logo-easy");
+const logoEasyButton = document.querySelector(".logo-easy");
     const initialContent = document.getElementById("initial-content");
     const quizContainer = document.getElementById("quiz-container");
     const scoreArea = document.querySelector(".score-area");
@@ -63,6 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let score = 0;
     let incorrectAnswers = 0;
 
+document.addEventListener("DOMContentLoaded", () => {
+    
     // Initially hide the quiz container and the "Stop Quiz" button
     quizContainer.classList.add("hidden");
     stopQuizButton.classList.add("hidden");
@@ -140,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 
                 resetQuiz();
             }
-        }, 1000); 
+        }, 2000); 
         
       
         updateScores();
