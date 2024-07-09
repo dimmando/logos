@@ -178,6 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
         incorrectScore.textContent = incorrectAnswers;
     }
     function totalQuestionsLeft() {
-        totalLeft = currentQuestions.length - currentQuestionIndex;
+        totalLeft = logoEasyQuestions.length - currentQuestionIndex;
+        console.log(totalLeft);
     }    
 });
