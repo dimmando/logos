@@ -82,8 +82,9 @@ document.addEventListener("DOMContentLoaded", () => {
         initialContent.classList.add("hidden");
         quizContainer.classList.remove("hidden");
         scoreArea.style.display = "block";
-    
         stopQuizButton.classList.remove("hidden");
+    
+    
         console.log("Line 86", stopQuizButton);
         currentQuestions = questionsArray;
         currentQuestionIndex = 0;
@@ -136,6 +137,17 @@ document.addEventListener("DOMContentLoaded", () => {
         newQuizBtn.classList.remove("hidden");
         stopQuizButton.classList.add("hidden");
     }
+    newQuizBtn.addEventListener('click', goHomeFunction);
+
+    function goHomeFunction() {
+        initialContent.classList.remove("hidden");
+        quizContainer.classList.add("hidden");
+        scoreArea.style.display = "none";
+        stopQuizButton.classList.add("hidden");
+        newQuizBtn.classList.add("hidden");
+        quizFinalResults.classList.add("hidden");
+    }
+
 
     function selectAnswer(e) {
         const selectedButton = e.target;
