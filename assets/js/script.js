@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Initially hide the quiz container and the "Stop Quiz" button
     quizContainer.classList.add("hidden");
-    stopQuizButton.classList.add("hidden");
+    // stopQuizButton.classList.add("hidden");
 
     logoEasyButton.addEventListener("click", () => {
         startQuiz(logoEasyQuestions);
@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
         scoreArea.style.display = "block";
     
         stopQuizButton.classList.remove("hidden");
+        console.log("Line 86", stopQuizButton);
         currentQuestions = questionsArray;
         currentQuestionIndex = 0;
         score = 0;
@@ -119,6 +120,19 @@ document.addEventListener("DOMContentLoaded", () => {
             answerButtons.removeChild(answerButtons.firstChild);
         }
         
+        // questionElement.classList.add("hidden");
+        // newQuizBtn.classList.remove("hidden");
+        // stopQuizButton.classList.add("hidden");
+    }
+
+    function endGame() {
+        while (answerButtons.firstChild) {
+        answerButtons.removeChild(answerButtons.firstChild);
+        }
+        
+        totalLeft.innerHTML = 0;
+        
+        questionElement.classList.add("hidden");
         newQuizBtn.classList.remove("hidden");
         stopQuizButton.classList.add("hidden");
     }
@@ -149,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 quizFinalResults.innerHTML = `Quiz finished! Your score is ${score}/${currentQuestions.length}.`;
                /* alert(`Quiz finished! Your score is ${score}/${currentQuestions.length}.`); */
         
-                resetState();
+               endGame();
             }
         }, 2000); 
           

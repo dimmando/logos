@@ -183,11 +183,7 @@ display: none;
     cursor: pointer;
 }
 
-.hidden {
-    display: none;
-}
-
-#stop-quiz {
+.stop-quiz {
 
     text-decoration: none;
     color: red;
@@ -218,6 +214,10 @@ display: none;
 
 .container {
     width:98%;
+}
+
+.hidden {
+    display: none;
 }
 
 /*Media query: tablets and larger (768px and up)*/
