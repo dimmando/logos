@@ -57,6 +57,8 @@ const logoEasyQuestions = [
     const incorrectScore = document.getElementById("incorrect");
     const stopQuizButton = document.getElementById("stop-quiz");
     const totalLeft = document.getElementById("total");
+    const quizFinalResults = document.getElementById("quiz-final-results");
+    const newQuizBtn = document.getElementById("new-quiz-btn"); 
     console.log("TotalLeft Line 60", totalLeft);
 
     let currentQuestionIndex = 0;
@@ -111,10 +113,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function resetState() {
-        nextButton.style.display = "none";
+        // nextButton.classList.add("hidden");
+
         while (answerButtons.firstChild) {
             answerButtons.removeChild(answerButtons.firstChild);
         }
+        
+        newQuizBtn.classList.remove("hidden");
+        stopQuizButton.classList.add("hidden");
     }
 
     function selectAnswer(e) {
@@ -140,10 +146,10 @@ document.addEventListener("DOMContentLoaded", () => {
             if (currentQuestionIndex < currentQuestions.length - 1) {
                 nextQuestion();
             } else {
-                
-                alert(`Quiz finished! Your score is ${score}/${currentQuestions.length}.`);
-                
-                resetQuiz();
+                quizFinalResults.innerHTML = `Quiz finished! Your score is ${score}/${currentQuestions.length}.`;
+               /* alert(`Quiz finished! Your score is ${score}/${currentQuestions.length}.`); */
+        
+                resetState();
             }
         }, 2000); 
           
@@ -154,12 +160,13 @@ document.addEventListener("DOMContentLoaded", () => {
         currentQuestionIndex++;
         if (currentQuestionIndex < currentQuestions.length) {
             showQuestion();
-            totalQuestionsLeft();
+            
         } else {
-            alert(`Quiz finished! Your score is ${score}/${currentQuestions.length}.`);
+            quizFinalResults.innerHTML = `Quiz finished! Your score is ${score}/${currentQuestions.length}.`;
             startQuiz(currentQuestions);
         }
         updateScores(); 
+        totalQuestionsLeft();
     }
 
     function setStatusClass(element, correct) {
