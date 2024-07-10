@@ -79,13 +79,13 @@ document.addEventListener("DOMContentLoaded", () => {
    
     function startQuiz(questionsArray) {
         // Hide the initial content and display the quiz container
+                
         initialContent.classList.add("hidden");
         quizContainer.classList.remove("hidden");
         scoreArea.style.display = "block";
-        stopQuizButton.classList.remove("hidden");
-    
-    
-        console.log("Line 86", stopQuizButton);
+        stopQuizButton.classList.remove("hidden"); 
+
+        
         currentQuestions = questionsArray;
         currentQuestionIndex = 0;
         score = 0;
@@ -133,11 +133,14 @@ document.addEventListener("DOMContentLoaded", () => {
         
         totalLeft.innerHTML = 0;
         
+        document.getElementById("new-quiz-btn").style.display = "inline-block";
+        
         questionElement.classList.add("hidden");
         newQuizBtn.classList.remove("hidden");
         stopQuizButton.classList.add("hidden");
     }
-    newQuizBtn.addEventListener('click', goHomeFunction);
+        
+        newQuizBtn.addEventListener('click', goHomeFunction);
 
     function goHomeFunction() {
         initialContent.classList.remove("hidden");
@@ -146,6 +149,8 @@ document.addEventListener("DOMContentLoaded", () => {
         stopQuizButton.classList.add("hidden");
         newQuizBtn.classList.add("hidden");
         quizFinalResults.classList.add("hidden");
+
+        document.getElementById("new-quiz-btn").style.display = "none";
     }
 
 
@@ -177,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
                endGame();
             }
-        }, 2000); 
+        }, 1500); 
           
         updateScores();
     }

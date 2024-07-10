@@ -106,13 +106,20 @@ footer > a:hover {
 
 .score-area {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: center; /* Center the scores horizontally */
 }
 
 .scores {
     margin: 5px;
     font-size: large;
+}
+
+#quiz-final-results {
+    margin-bottom: 20px;
+    font-size: x-large;
+    font-weight: bold;
+
 }
 
 #quiz-container {
@@ -191,7 +198,7 @@ display: none;
     font-size: x-large;
     margin-bottom: 20px;
     display: inline-block;
-    border: 2px solid lightslategray;
+    border: 2px solid gray;
     background-color: white;
     border-radius: 600px;
     width: 180px;
@@ -200,6 +207,24 @@ display: none;
     margin-top: 30px;
     
 }
+
+#new-quiz-btn {
+    text-decoration:;
+    color: #1e3050;
+    font-weight: 500;
+    font-size: x-large;
+    margin-bottom: 20px;
+    display: none;
+    border: 2px solid gray;
+    background-color: white;
+    border-radius: 600px;
+    width: 180px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
 .stop-quiz-cont {
 
     display: flex;
