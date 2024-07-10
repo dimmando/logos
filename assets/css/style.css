@@ -70,7 +70,7 @@ footer > a:hover {
 .rules {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     width: 90%; /* Adjust as needed */
     max-width: 300px; /* Ensure the content fits within the device width */
     text-align: justify;
@@ -209,7 +209,7 @@ display: none;
 }
 
 #new-quiz-btn {
-    text-decoration:;
+    text-decoration: none;
     color: #1e3050;
     font-weight: 500;
     font-size: x-large;
@@ -261,7 +261,7 @@ display: none;
     .rules {
         display: flex;
         flex-direction: column;
-        align-items: left;
+        align-items: flex-start;
         width: 90%; /* Adjust as needed */
         max-width: 500px; /* Ensure the content fits within the device width */
         text-align: justify;

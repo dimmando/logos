@@ -70,7 +70,7 @@ const logoEasyQuestions = [
 document.addEventListener("DOMContentLoaded", () => {
     
     // Initially hide the quiz container and the "Stop Quiz" button
-    quizContainer.classList.add("hidden");
+    // quizContainer.classList.add("hidden");
     // stopQuizButton.classList.add("hidden");
 
     logoEasyButton.addEventListener("click", () => {
@@ -139,9 +139,10 @@ document.addEventListener("DOMContentLoaded", () => {
         newQuizBtn.classList.remove("hidden");
         stopQuizButton.classList.add("hidden");
     }
-        
-        newQuizBtn.addEventListener('click', goHomeFunction);
+    document.getElementById("new-quiz-btn").addEventListener('click', function(){location.reload()}); 
+        // newQuizBtn.addEventListener('click', goHomeFunction);
 
+/*
     function goHomeFunction() {
         initialContent.classList.remove("hidden");
         quizContainer.classList.add("hidden");
@@ -152,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         document.getElementById("new-quiz-btn").style.display = "none";
     }
-
+*/
 
     function selectAnswer(e) {
         const selectedButton = e.target;
@@ -220,6 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function totalQuestionsLeft() {
         questionsLeft = logoEasyQuestions.length - currentQuestionIndex;
         totalLeft.innerHTML = questionsLeft;
+        console.log("currentQuestionIndex is:", currentQuestionIndex); 
         console.log("questionsLeft Number is", questionsLeft);
         console.log(totalLeft);
     }    
