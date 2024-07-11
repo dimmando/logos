@@ -25,10 +25,12 @@
 
 <body>
 
+<!-- Heading text/Logo of Car Logos Quiz -->
 <header>
 <a href="index.html" class="header-link" aria-label="Heading text/Logo of Car Logos Quiz"><h1 class="header">Car Logos Quiz</h1></a>
 </header>
 
+<!-- Rules of the Quiz that hides then -->
 <main class="container">
     <div id="initial-content" class="logos">
         
@@ -44,9 +46,11 @@
         <li>There are 5 questions total. After passing through all questions you'll see the screen showing you total score.</li>
         <li>You can stop the Quiz at any time pressing "Stop Quiz" button. You will be redirected to start page then.</li>
       </ol>
-
+      
+      <!-- Beautyfication image -->
       <div class="rr-image"></div>
-        
+
+      <!-- Button that starts the game  -->
       <div class="logo-buttons">
         <button class="logo-easy">Start</button>
       </div>
@@ -54,6 +58,7 @@
     </div>
 </main>
 
+  <!-- Counters area -->
   <div id="quiz-container" class="hidden">
     
     <div class="stop-quiz-cont">
@@ -64,20 +69,32 @@
         </div>
     </div>
     
+    <!-- Question image logo -->
     <div id="question"></div>
+    
+    <!-- Answer buttons -->
     <div id="answer-buttons"></div>
+    
+    <!-- Stop Quiz button -->
     <a href="index.html" id="stop-quiz" class="hidden stop-quiz" aria-label="Stop Quiz button">Stop Quiz</a>
   </div>
-    
+
+    <!-- Next -->
     <button id="next-btn" class="hidden">Next Question</button>
+    
+    <!-- Results page -->
     <p id="quiz-final-results"></p>
+    
+    <!-- Next Quiz button for Results page -->
     <button id="new-quiz-btn" class="hidden">New Quiz</button>
 
+    <!-- Footer -->
 <footer>
     <i class="fa fa-copyright" style="font-size:13px"></i>
     <a href="https://github.com/dimmando/logos" aria-label="Link to Github repository of creator" target="_blank"  class="copy">dimmando</a>
 </footer>
 
+<!-- Calling JavaScript -->
 <script src="assets/js/script.js"></script>
 
 </body>
