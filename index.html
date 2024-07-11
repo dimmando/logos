@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Icons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <!--Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Carme&display=swap" rel="stylesheet">
-    <!--Fontawesome link-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Style-->
-    <link rel="stylesheet" href="assets/css/style.css">
-     <!--Meta tags-->
-     <meta name="description" content="Car Logos Quiz - Check you knowledges about cars">
-     <meta name="keywords"
-         content="car, car logo, cars, cars logos, Germany cars, China cars, American cars, Italy cars, India cars, Grand Britain cars, model, car model, car models, domestic model car, new car, old car,">
-    <!--Title-->
-    <title>Car Logos Quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Icons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Carme&display=swap" rel="stylesheet">
+  <!--Fontawesome link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Style-->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!--Meta tags-->
+  <meta name="description" content="Car Logos Quiz - Check you knowledges about cars">
+  <meta name="keywords"
+    content="car, car logo, cars, cars logos, Germany cars, China cars, American cars, Italy cars, India cars, Grand Britain cars, model, car model, car models, domestic model car, new car, old car,">
+  <!--Title-->
+  <title>Car Logos Quiz</title>
 </head>
 
 <body>
 
-<!-- Heading text/Logo of Car Logos Quiz -->
-<header>
-<a href="index.html" class="header-link" aria-label="Heading text/Logo of Car Logos Quiz"><h1 class="header">Car Logos Quiz</h1></a>
-</header>
+  <!-- Heading text/Logo of Car Logos Quiz -->
+  <header>
+    <a href="index.html" class="header-link" aria-label="Heading text/Logo of Car Logos Quiz">
+      <h1 class="header">Car Logos Quiz</h1>
+    </a>
+  </header>
 
-<!-- Rules of the Quiz that hides then -->
-<main class="container">
+  <!-- Rules of the Quiz that hides then -->
+  <main class="container">
     <div id="initial-content" class="logos">
-        
+
       <h2 class="guesslogo">Rules:</h2>
-        
+
       <ol class="rules">
         <li>You need to guess as many car names as you can by their logos.</li>
         <li>Press on "Start" button.</li>
@@ -43,10 +46,12 @@
         <li>Only one option is correct.</li>
         <li>Choose you option and you'll see if you answer have been correct or not.</li>
         <li>The next question will be automatically loaded after small delay.</li>
-        <li>There are 5 questions total. After passing through all questions you'll see the screen showing you total score.</li>
-        <li>You can stop the Quiz at any time pressing "Stop Quiz" button. You will be redirected to start page then.</li>
+        <li>There are 5 questions total. After passing through all questions you'll see the screen showing you total
+          score.</li>
+        <li>You can stop the Quiz at any time pressing "Stop Quiz" button. You will be redirected to start page then.
+        </li>
       </ol>
-      
+
       <!-- Beautyfication image -->
       <div class="rr-image"></div>
 
@@ -56,46 +61,48 @@
       </div>
 
     </div>
-</main>
+  </main>
 
   <!-- Counters area -->
   <div id="quiz-container" class="hidden">
-    
+
     <div class="stop-quiz-cont">
-        <div class="score-area">
-          <p class="scores">Correct Answers: <span id="score">0</span></p>
-          <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
-          <p class="scores">Total Questions Left: <span id="total">0</span></p>
-        </div>
+      <div class="score-area">
+        <p class="scores">Correct Answers: <span id="score">0</span></p>
+        <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
+        <p class="scores">Total Questions Left: <span id="total">0</span></p>
+      </div>
     </div>
-    
+
     <!-- Question image logo -->
     <div id="question"></div>
-    
+
     <!-- Answer buttons -->
     <div id="answer-buttons"></div>
-    
+
     <!-- Stop Quiz button -->
     <a href="index.html" id="stop-quiz" class="hidden stop-quiz" aria-label="Stop Quiz button">Stop Quiz</a>
   </div>
 
-    <!-- Next -->
-    <button id="next-btn" class="hidden">Next Question</button>
-    
-    <!-- Results page -->
-    <p id="quiz-final-results"></p>
-    
-    <!-- Next Quiz button for Results page -->
-    <button id="new-quiz-btn" class="hidden">New Quiz</button>
+  <!-- Next -->
+  <button id="next-btn" class="hidden">Next Question</button>
 
-    <!-- Footer -->
-<footer>
+  <!-- Results page -->
+  <p id="quiz-final-results"></p>
+
+  <!-- Next Quiz button for Results page -->
+  <button id="new-quiz-btn" class="hidden">New Quiz</button>
+
+  <!-- Footer -->
+  <footer>
     <i class="fa fa-copyright" style="font-size:13px"></i>
-    <a href="https://github.com/dimmando/logos" aria-label="Link to Github repository of creator" target="_blank"  class="copy">dimmando</a>
-</footer>
+    <a href="https://github.com/dimmando/logos" aria-label="Link to Github repository of creator" target="_blank"
+      class="copy">dimmando</a>
+  </footer>
 
-<!-- Calling JavaScript -->
-<script src="assets/js/script.js"></script>
+  <!-- Calling JavaScript -->
+  <script src="assets/js/script.js"></script>
 
 </body>
+
 </html>
