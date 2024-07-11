@@ -1,3 +1,4 @@
+// Logos and answer options array
 const logoEasyQuestions = [
     {
         imagePath: 'assets/images/logo1.png',
@@ -46,6 +47,7 @@ const logoEasyQuestions = [
     }
 ];
 
+    // Variables and access to elements
     const logoEasyButton = document.querySelector(".logo-easy");
     const initialContent = document.getElementById("initial-content");
     const quizContainer = document.getElementById("quiz-container");
@@ -66,20 +68,21 @@ const logoEasyQuestions = [
     let incorrectAnswers = 0;
     let questionsLeft = logoEasyQuestions.length;
   
+    // Waiting when DOM is loaded
     document.addEventListener("DOMContentLoaded", () => {
     logoEasyButton.addEventListener("click", () => {
         startQuiz(logoEasyQuestions);
     });
    
+    // Hide starting content and display the quiz container
     function startQuiz(questionsArray) {
-        // Hide the initial content and display the quiz container
-                
+                        
         initialContent.classList.add("hidden");
         quizContainer.classList.remove("hidden");
         scoreArea.style.display = "block";
         stopQuizButton.classList.remove("hidden"); 
 
-        
+        // Start values
         currentQuestions = questionsArray;
         currentQuestionIndex = 0;
         score = 0;
@@ -90,6 +93,7 @@ const logoEasyQuestions = [
         totalLeft.innerHTML = questionsLeft;
     }
 
+    // Start Quiz step by step
     function showQuestion() {
         resetState();
         const currentQuestion = currentQuestions[currentQuestionIndex];
@@ -107,12 +111,14 @@ const logoEasyQuestions = [
         });
     }
 
+    // Cleaning
     function resetState() {
         while (answerButtons.firstChild) {
             answerButtons.removeChild(answerButtons.firstChild);
         }
     }
-
+    
+    // Final screen
     function endGame() {
         while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
@@ -126,26 +132,25 @@ const logoEasyQuestions = [
         newQuizBtn.classList.remove("hidden");
         stopQuizButton.classList.add("hidden");
     }
+
+    // New Quiz button leads to the beginning
     document.getElementById("new-quiz-btn").addEventListener('click', function(){location.reload();}); 
 
+    // Select answer, scores and timeout
     function selectAnswer(e) {
         const selectedButton = e.target;
-        // const correct = selectedButton.dataset.correct === "true";
         const answer = currentQuestions[currentQuestionIndex].answers.find(ans => ans.text === selectedButton.innerText);
-        
-       
+               
         if (answer.correct) {
             score++;
         } else {
             incorrectAnswers++;
         }
-        
-        
+                
         Array.from(answerButtons.children).forEach(button => {
             button.disabled = true;
             setStatusClass(button, button.dataset.correct === "true");
         });
-        
         
         setTimeout(() => {
             if (currentQuestionIndex < currentQuestions.length - 1) {
@@ -160,6 +165,7 @@ const logoEasyQuestions = [
         updateScores();
     }
     
+    // Moves through questions and ends game
     function nextQuestion() {
         currentQuestionIndex++;
         if (currentQuestionIndex < currentQuestions.length) {
@@ -173,6 +179,7 @@ const logoEasyQuestions = [
         totalQuestionsLeft();
     }
 
+    // Sets status classes for buttons
     function setStatusClass(element, correct) {
         clearStatusClass(element);
         if (correct) {
@@ -182,10 +189,13 @@ const logoEasyQuestions = [
         }
     }
 
+    // Clears status classes for buttons 
     function clearStatusClass(element) {
         element.classList.remove("correct");
         element.classList.remove("wrong");
     }
+
+    // Updates scores area
     function updateScores() {
         correctScore.textContent = score;
         incorrectScore.textContent = incorrectAnswers;
