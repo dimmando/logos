@@ -3,8 +3,9 @@
     font-family: "Carme", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
+/* Body */
 body {
     background-color: white;
     font-family: "Carme", sans-serif;
@@ -19,6 +20,7 @@ body {
     min-height: 100vh;
 }
 
+/* Quiz Logo */
 .header {
     text-align: center;
     font-size: xx-large;
@@ -26,9 +28,10 @@ body {
     margin-bottom: 5px;
     color: #1e3050;
 }
+
 .header-link {
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Ensure it behaves like a block-level element for layout */
+    text-decoration: none;
+    display: inline-block;
 }
 
 .copy {
@@ -38,35 +41,42 @@ body {
     color: slategray;
 }
 
-footer > a:hover {
+/* Footer */
+footer>a:hover {
     color: #1e3050;
 }
 
+/* Hidden class */
 .hidden {
     display: none;
 }
 
+/* Logos */
 .logos {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%; /* Adjust as needed */
-    max-width: 344px; /* Ensure the content fits within the device width */
-    margin: 0 auto 50px auto; /* Center horizontally and add space between sections */
+    width: 100%;
+    max-width: 344px;
+    margin: 0 auto 50px auto;
 }
 
+/* Home page image */
 .rr-image {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 250px; /* Adjust height to fit within the viewport */
+    height: 250px;
+    /* Adjust height to fit within the viewport */
     width: 96%;
-    max-width: 600px; /* Ensure the image fits within the device width */
+    max-width: 600px;
+    /* Ensure the image fits within the device width */
     margin-left: 2px;
     margin-right: 2px;
 }
 
+/* Rules */
 .rules {
     display: flex;
     flex-direction: column;
@@ -78,37 +88,41 @@ footer > a:hover {
     margin: 12px 0px 10px 2px;
 }
 
+/* Answer options buttons */
 .logo-buttons {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Adjust gap as needed */
-    margin-top: 20px; /* Space between image and buttons */
-    align-items: center; /* Center the buttons */
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
 }
 
 .logo-buttons button {
-    border: 3px solid gainsboro; /* 3px wide solid border */
-    border-radius: 10px; /* 10px border radius for curved corners */
+    border: 3px solid gainsboro;
+    border-radius: 10px;
     height: 40px;
-    width: 200px; /* Set width to a consistent value */
+    width: 200px;
     font-size: larger;
     cursor: pointer;
 }
 
+/* Start button */
 .logo-easy {
     background-color: green;
     color: white;
 }
 
+/* Car logo */
 .guesslogo {
     font-size: large;
-    margin-bottom: -15px; /* Space below the header */
+    margin-bottom: -15px;
 }
 
+/* Score counters */
 .score-area {
     margin-top: 10px;
     margin-bottom: 15px;
-    text-align: center; /* Center the scores horizontally */
+    text-align: center;
 }
 
 .scores {
@@ -116,6 +130,7 @@ footer > a:hover {
     font-size: large;
 }
 
+/* Quiz final results */
 #quiz-final-results {
     margin-bottom: 20px;
     font-size: x-large;
@@ -123,28 +138,32 @@ footer > a:hover {
 
 }
 
+/* Whole container */
 #quiz-container {
-    text-align: center;  
+    text-align: center;
 }
 
+/* Heading style */
 h1 {
     margin-top: -10px;
 }
 
+/* Beauty home page image */
 .rr-image {
     /* Adjust styling for logo images */
     background: url(../images/rr-logo.jpg)no-repeat center center/cover;
 }
 
 /* Optional: Style for the container */
-#question img{
-  height: 250px;
-  width: 90%;
+#question img {
+    height: 250px;
+    width: 90%;
 }
 
+/* Animating answer buttons */
 .btn {
     background: #fff;
-    color:#222;
+    color: #222;
     font-weight: 500;
     width: 90%;
     border: 1px solid #222;
@@ -156,25 +175,27 @@ h1 {
     transition: all 0.3s;
 }
 
+/* Hover effect */
 .btn:hover {
     background: #1e3050;
     color: #fff;
 }
 
+/* Next */
 #next-btn {
-background: #001e4d;
-color: #fff;
-font-weight: 500;
-width: 40px;
-border: 0;
-padding: 10px;
-margin: 20px auto 0;
-border-radius: 4px;
-cursor: pointer;
-display: none;
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 40px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
 }
 
-
+/* Answers colors */
 .correct {
     background-color: green;
     color: white;
@@ -191,6 +212,7 @@ display: none;
     cursor: pointer;
 }
 
+/* Stop Quiz button */
 .stop-quiz {
 
     text-decoration: none;
@@ -206,9 +228,10 @@ display: none;
     text-align: center;
     padding: 10px;
     margin-top: 30px;
-    
+
 }
 
+/* New Quiz button */
 #new-quiz-btn {
     text-decoration: none;
     color: #1e3050;
@@ -226,20 +249,22 @@ display: none;
     cursor: pointer;
 }
 
+/* Stop Quiz */
 .stop-quiz-cont {
 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-   
+
 }
+
 .hidden-text {
     visibility: hidden;
 }
 
 .container {
-    width:98%;
+    width: 98%;
 }
 
 .hidden {
@@ -249,22 +274,23 @@ display: none;
 /*Media query: tablets and larger (768px and up)*/
 @media screen and (min-width:768px) {
     #question img {
-        height: 250px;  /* Set a fixed height for all images */
-        width: 90%; /* Set a width relative to the parent container */
+        height: 250px;
+        width: 90%;
         max-width: 500px;
     }
 
     .rr-image {
-         height: 350px; /* Set a fixed height for all images */
-         width: 500px;  /* Set a width relative to the parent container */
-         max-width: 500px; 
+        height: 350px;
+        width: 500px;
+        max-width: 500px;
     }
+
     .rules {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        width: 90%; /* Adjust as needed */
-        max-width: 500px; /* Ensure the content fits within the device width */
+        width: 90%;
+        max-width: 500px;
         text-align: justify;
         width: 460px;
     }
@@ -272,7 +298,7 @@ display: none;
 
 /*Larger devices (laptops and desktops 992px and up )*/
 @media screen and (min-width:992px) {
-    
+
     #quiz-container {
         margin-top: -15px;
     }
