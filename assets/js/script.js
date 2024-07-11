@@ -59,20 +59,14 @@ const logoEasyQuestions = [
     const totalLeft = document.getElementById("total");
     const quizFinalResults = document.getElementById("quiz-final-results");
     const newQuizBtn = document.getElementById("new-quiz-btn"); 
-    console.log("TotalLeft Line 60", totalLeft);
-
+ 
     let currentQuestionIndex = 0;
     let currentQuestions = [];
     let score = 0;
     let incorrectAnswers = 0;
     let questionsLeft = logoEasyQuestions.length;
-    console.log("questionsLeft Line 67", questionsLeft);
-document.addEventListener("DOMContentLoaded", () => {
-    
-    // Initially hide the quiz container and the "Stop Quiz" button
-    // quizContainer.classList.add("hidden");
-    // stopQuizButton.classList.add("hidden");
-
+  
+    document.addEventListener("DOMContentLoaded", () => {
     logoEasyButton.addEventListener("click", () => {
         startQuiz(logoEasyQuestions);
     });
@@ -96,7 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
         totalLeft.innerHTML = questionsLeft;
     }
 
-
     function showQuestion() {
         resetState();
         const currentQuestion = currentQuestions[currentQuestionIndex];
@@ -115,15 +108,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function resetState() {
-        // nextButton.classList.add("hidden");
-
         while (answerButtons.firstChild) {
             answerButtons.removeChild(answerButtons.firstChild);
         }
-        
-        // questionElement.classList.add("hidden");
-        // newQuizBtn.classList.remove("hidden");
-        // stopQuizButton.classList.add("hidden");
     }
 
     function endGame() {
@@ -139,25 +126,11 @@ document.addEventListener("DOMContentLoaded", () => {
         newQuizBtn.classList.remove("hidden");
         stopQuizButton.classList.add("hidden");
     }
-    document.getElementById("new-quiz-btn").addEventListener('click', function(){location.reload()}); 
-        // newQuizBtn.addEventListener('click', goHomeFunction);
-
-/*
-    function goHomeFunction() {
-        initialContent.classList.remove("hidden");
-        quizContainer.classList.add("hidden");
-        scoreArea.style.display = "none";
-        stopQuizButton.classList.add("hidden");
-        newQuizBtn.classList.add("hidden");
-        quizFinalResults.classList.add("hidden");
-
-        document.getElementById("new-quiz-btn").style.display = "none";
-    }
-*/
+    document.getElementById("new-quiz-btn").addEventListener('click', function(){location.reload();}); 
 
     function selectAnswer(e) {
         const selectedButton = e.target;
-        const correct = selectedButton.dataset.correct === "true";
+        // const correct = selectedButton.dataset.correct === "true";
         const answer = currentQuestions[currentQuestionIndex].answers.find(ans => ans.text === selectedButton.innerText);
         
        
@@ -179,7 +152,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 nextQuestion();
             } else {
                 quizFinalResults.innerHTML = `Quiz finished! Your score is ${score}/${currentQuestions.length}.`;
-               /* alert(`Quiz finished! Your score is ${score}/${currentQuestions.length}.`); */
         
                endGame();
             }
@@ -221,8 +193,5 @@ document.addEventListener("DOMContentLoaded", () => {
     function totalQuestionsLeft() {
         questionsLeft = logoEasyQuestions.length - currentQuestionIndex;
         totalLeft.innerHTML = questionsLeft;
-        console.log("currentQuestionIndex is:", currentQuestionIndex); 
-        console.log("questionsLeft Number is", questionsLeft);
-        console.log(totalLeft);
     }    
 });
