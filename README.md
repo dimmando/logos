@@ -63,7 +63,7 @@ Car Logos Quiz can be accessed by this [link](https://dimmando.github.io/logos/)
 
             ![Home Mobile Version](documentation/mobile.png)
         
-        * On tablet or laptop/desktop: when user see from high resolution device content become wider.
+        * On tablet or laptop/desktop: when user see from high resolution device content becomes wider.
 
             ![Home Tablet/Desktop Version](documentation/desktop.png)
 
