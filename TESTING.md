@@ -52,7 +52,7 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 
 ## LightHouse report
 
-    - Using lighthouse in devtools I confirmed that the website is performing well, accessible and colors and fonts chosen are readable.
+  Using lighthouse in devtools I confirmed that the website is performing well, accessible and colors and fonts chosen are readable.
     
   ### Home page
 
