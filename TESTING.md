@@ -64,15 +64,13 @@ In order to confirm the correct functionality, responsiveness, and appearance:
  
 User Story |  Test | Pass
 --- | --- | :---:
-I want to understand the main purpose of the site | I can read text Beauty Studio and services provided just in the center of the screen. | &check;​
-I want to be able easily navigate through the website | I can either scroll down and see at once an information related to services or choose required menu item and go to page interested for me | &check;​
-I want to see the prices to compare it with the other competitors | Prices we can see at once under the list of the services | &check;
-I want to see how the Beauty Studio looks like | I can choose OUR STUDIO menu item and go to page with the photos gallery | &check;
-I want to see phone number and opening hours | I can easily scroll down to the bottom or choose CONTACTS menu item and go to contact information at the bottom of Main Page | &check;
-I want to see if location close to me | I can see the Google Map insertion at the bottom of Main Page, open it and make a pathway to me | &check;
-I want to find a way how to book an appointment with the specialist in the Beauty Studio | I can tap/click on the button BOOK NOW! just on the Main Page at start screen or choose the BOOKING menu item and go to the Booking page | &check;
-I want to have easy way for frequently booking a visiting time | I can do it quickly by tapping/clicking button BOOK NOW! just on the Main Page at start screen | &check;
-I want to see prices always on top | Prices always under heading text of the services provided after background picture with the girls | &check;
+I want to understand the main purpose of the site | I can easily read heading text Car Logos Quiz just at the top of home page in the center of the screen. | &check;​
+I want to be able easily navigate through the website | I can easily find the content required. It's all in one place, in compact size and in the center of the screen. | &check;​
+I want to easy start using functionality. | The Start button is easily accesible on the main page in the center of the screen. | &check;
+I want to pass through the test if I haven't yet | I can start it just in one click. | &check;
+I want to see how my score is count and how many questions left. | These information always right in front of my eyes. | &check;
+I want to see my final score | I can see it each time the Car Logos Quiz finishes at the last page of the Quiz. | &check;
+I want to have possibility restart the Quiz easily to try it again to earn more points if I have found out that my score is too low. | I can restart the Quiz at any time either by pressing "Stop Quiz" button or press "New Quiz" button at the end. | &check;
 
 ## Bugs
 + ### Solved bugs
