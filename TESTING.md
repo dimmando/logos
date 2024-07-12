@@ -56,8 +56,13 @@ In order to confirm the correct functionality, responsiveness, and appearance:
     
   ### Home page
 
-  ![Home Page Lighthouse](documentation/lighthouse_home_page.png)
+  + Mobile version
 
+  ![Home Page Lighthouse Mobile](documentation/lighthouse_home_page.png)
+
+  + Desktop version
+  
+  ![Home Page Lighthouse Desktop](documentation/lighthouse_home_page_desk.png)
 ---
 
 ## Testing user stories
