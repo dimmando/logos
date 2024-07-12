@@ -21,8 +21,8 @@ Car Logos Quiz can be accessed by this [link](https://dimmando.github.io/logos/)
 
 ### Returning Visitor Goals:
 
-* As a Returning Visitor, I want to pass through the test if I didn't. So I can start it just in one click.
-* As a Returning Visitor, I want to see how my score is count and how many questions left. So it's information always right in front of my eyes.
+* As a Returning Visitor, I want to pass through the test if I haven't yet. So I can start it just in one click.
+* As a Returning Visitor, I want to see how my score is being counted and how many questions left. So it's information always right in front of my eyes.
 * As a Returning Visitor, I want to see my final score.  So it's information always in the end of Quiz.
 
 ### Frequent Visitor Goals:

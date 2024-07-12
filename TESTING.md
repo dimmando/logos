@@ -66,9 +66,9 @@ User Story |  Test | Pass
 --- | --- | :---:
 I want to understand the main purpose of the site | I can easily read heading text Car Logos Quiz just at the top of home page in the center of the screen. | &check;​
 I want to be able easily navigate through the website | I can easily find the content required. It's all in one place, in compact size and in the center of the screen. | &check;​
-I want to easy start using functionality. | The Start button is easily accesible on the main page in the center of the screen. | &check;
-I want to pass through the test if I haven't yet | I can start it just in one click. | &check;
-I want to see how my score is count and how many questions left. | These information always right in front of my eyes. | &check;
+I want to easily start using functionality. | The "Start" button is easily accesible on the main page in the center of the screen. | &check;
+I want to pass through the test if I haven't yet | I can start it just in one click on "Start" button. | &check;
+I want to see how my score is being counted and how many questions left. | These information always right in front of my eyes with every Quiz question. | &check;
 I want to see my final score | I can see it each time the Car Logos Quiz finishes at the last page of the Quiz. | &check;
 I want to have possibility restart the Quiz easily to try it again to earn more points if I have found out that my score is too low. | I can restart the Quiz at any time either by pressing "Stop Quiz" button or press "New Quiz" button at the end. | &check;
 
